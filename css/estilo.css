@@ -1,0 +1,220 @@
+body {background: url(../Imagenes/fondos/main.gif);
+    background-repeat: repeat;
+    /*background-attachment: fixed; Esto lo que hace, es que el fondo no se "mueva"(?)*/
+    /*Hay varios comando para los fondos, si quieres que se repitan, tienes que
+    poner debajo de background, otro background-repeat, despues si quieres que no se repita, al backgroud le añades un ":no-repeat"
+    ademas, se puede repetir de manera horizontal (con repeat-x) o vertical (con repeat-y), se puede ponerle una imagen de fondo a cualquier
+    cosa (Como un div por ejemplo)*/
+    /*Igual se puede posicionar la imagen a tu preferencia, con background-position, se puede posicionar con la unidad
+    de medida de tu gusto, igual se puede usar center para posicionar el fondo, aunque ojo, se posicionara en el centro de la pantalla 
+    (literalmente) se puede ver la posicion vertical, añadiendo algun valor extra de tu preferencia :].*/
+    color:#ffffff; /* Cambia el color de todo el texto */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal; /*Esto hace que se pongan en negitas las letras, o que, si vienen por
+    defecto en negritas, se pongan normales, etc.*/
+    text-align: left; /*Esto cambia la posicion de los textos, Esto igual sirve para centrar
+    cajas SOLO tipo bloque*/
+    /*line-height: 10px; Esto sirve para modificar el tamaño que hay entre lineas.*/
+    text-decoration: none; /*sirve para ponerle decoraciones al texto,
+    como lineas debajo de este, etc.*/
+    text-transform: none; /*sirve para capitalizar, dejar todo el texto en minuscula o mayuscula, etc.*/
+    letter-spacing: 0.5px; /*le da un espaciado por cada letra que haya en el texto*/
+    word-spacing: none; /*le da un espaciado por palabra que haya en un texto*/
+    /*text-shadow: 5px 5px 5px #434242; Le da sombra al texto. son, 5 pixeles horizontalmente,
+    5 pixeles verticalmente, 5 pixeles de sombra en si*/
+
+
+
+    /*margin: 15;
+    padding: 0 ;  Ayuda a añadir o sacar espacios de la pagina (Margenes) */
+    .bienvenida { /*Se pueden añadir, con una coma mas h, o p, o lo que sea, si es que quieres cambiarles de color*/
+        font-size: 20px;
+        color:blue
+    }
+
+
+
+    .menu li a:hover{
+        box-shadow: 0px 2px 0px #da2c2c;
+        background: #886767;
+    }
+
+    .menu {
+        width: 100%;
+        list-style: none;
+        margin:auto;
+        padding: 0px 330px;
+    }
+
+    .menu li{
+        display: inline-block;
+    }
+
+    .menu li a{
+        font-size: 15px;
+        display: inline-block;
+        margin: 4px 15px;
+        padding: 10px 20px;
+        background-color: blue;
+        color: #fff;
+        padding: 10px 20px;
+        box-shadow: 0px 5px 0px rgb(0, 102, 255);
+        list-style: none;
+    }
+
+    article div img{
+        background: #000000; /*Si usas un div, puedes "extender" la imagen al tamaño del
+        contenedor :]*/
+        width: 100%;
+        height: auto;
+    }
+
+    img { /*Si cambias el tamaño en un css, priorisa el tamaño del css antes que de html.*/
+        width:300px;
+        height: auto;
+        margin: auto; 
+        display: block; /*Las imagenes, predeterminadas son lineales, asi que es necesario
+        añadirle el display block, para que se pueda usar el margin*/
+        border-radius: 10px; /*Hace que los bordes de la imagen se hagan redondos*/
+        /*Puedes usar igual todas las otras cuestiones, como las sombras*/
+    }
+
+    .menu li a:active{
+        box-shadow:none;
+    }
+
+    .acerca_de_mi {
+        width: 20%;
+        height: auto;
+        background: cornflowerblue;
+        margin-top: 20px;
+        padding: 20px;
+        border: 6px double rgb(75, 49, 190);
+        position: relative;
+        bottom:25%;
+        right: 0;
+
+    }
+
+    .bienvenida {
+        width: 19%;
+        height: auto;
+        background: cornflowerblue;
+        margin-top: 30px;
+        padding: 20px;
+        border: solid #fff;
+        position: relative;
+        bottom:25%;
+        right: 0;
+    }
+    /*Se pueden usar todas las cuestiones del texto :]
+    ademas, se pueden 4 margins (en todos los textos)*/
+
+    /*a:hover{  Sirve para cuando pasas el mouse por un link O por alguna cosa divertida jiji
+        text-decoration: dashed;
+        color: #fff;
+        background: #000;
+    }
+
+    a:active{ Esto cambia como se ve el boton cuando lo presionas
+        background-color: tomato;
+    }
+
+    a:visited{ Esto cambia como se ve el link cuando lo presionas
+        color: violet;
+    }*/
+
+    p { /* Puedes aumentar o disminutir el tamaño de cualquier fuente */
+        font-size: 1em; /*Existen, otros tipos de medidas, los REM o EM, 1 em, equivale al tamaño que esta una fuente en el body, ej: en body
+        una fuente esta a 12px, 1em seria igual a 12px, igual se pueden usar decimales, se puede especificar modificar el tamaño
+        de una cosa, por ejemplo, si se quiere modificar el tamaño de un texto, que esta dentro de un div, se tomara el valor al div mas cercano*/
+    }
+
+    article div p { /*Puedes especificar cual texto o cosa quieres ahesteticar (pero todo tipo de cosa se vera afectada)*/
+        width: 50%;
+        height: 300px;
+        background: green;
+        margin: 20px; /*Si se le añade dos medidas, la primera representa
+        la medida que tendra el div, ariba y abajo. la segunda representa la medida
+        de los lados.*/
+        padding: 20px; /*Se le añade un margen interior al div. Se nota mejor
+        si no tiene la promiedad height. Las medidas se van sumando, ejemplo
+        Si tienes un height de 300 junto a un padding de 20, en realidad se tiene un
+        espacio de 340 pixeles.;*/
+        border: 6px dotted blue; /*Se le añade un borde al div, ademas añade mas
+        tamaño a la caja.*/
+
+        /*Hay otro comando, llamado "display" Sirve para mover las cajas al lado
+        o a donde mas te convenga, se tiene que usar, display:inline-block; si es que
+        quieres que tus cajas esten juntas.*/
+    }
+    .omg2{
+        list-style-type: circle;
+        list-style-position: inside; /*Puedes decidir si es que dejar un espaciado o no*/
+    }
+
+    .coleccion {
+        width: 50%;
+        height: 85px;
+        background: cornflowerblue;
+        margin: 20px;
+        padding: 20px;
+        border: 6px dotted rgb(75, 49, 190);
+        position: relative;
+        bottom:-193.5px;
+        right:-800px;
+    }
+
+    .Loona { /*Si quieres cambiarle alguna cosa a un texto especifico, se le puede poner una clase y boom!!!! se pueden poner en varias
+        cuestiones y ademas se puede especificar en un parrafo o texto en especifico (lo de arriba)*/
+        color: violet;
+    }
+
+    form {
+        width: 25%;
+        border:1px solid #ccc;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    label {
+        font-size: 12px;
+        display: block;
+        width: 100%;
+    } 
+
+    input, textarea {
+        margin-bottom: 20px;
+        width: 100%;
+        border: 1px solid #3050b7;
+    }
+
+    textarea {
+        max-width: 50%;
+    }
+
+    input[type="submit"] {
+        margin-bottom: 0;
+        background: #1668C4;
+        color: #fff;
+        border:none;
+    }
+
+        input[type="submit"]:hover {
+        background: #6aacf8;
+        cursor: pointer; /*Hace que cambie el tipo de raton q se muestra*/
+    }
+
+    input:focus, textarea:focus{
+        border: 1px solid #56dfaf;
+    }
+
+    /*a[href="https://drive.google.com/drive/folders/1f75_8AZC4zNbIO4rpKKXD-6cCGZsOhuT?usp=drive_link"]{ /* Se puede editar un link en especifico,
+        haciendose esto 
+        background: #000;
+        color: #fff; Se pueden usar porcentajes para aumentar o disminuir el tamaño de un texto,
+        ej: 100%, avarca toda la pantalla, 50%, avarca la mitad de la pantalla. Si el texto es muy largo,
+        se acortara automaticamente.}*/
+
+
+} /* El body, se modifica toda la pagina */

@@ -1,0 +1,206 @@
+/* Variables */
+:root {
+  --header-image: url('https://sadhost.neocities.org/images/layouts/wp.jpeg');
+  --body-bg-image: url(../Imagenes/fondos/covers.jpg);
+  --content: #253a6e;
+}
+
+/* Fuente personalizada */
+
+/*@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url('https://sadhost.neocities.org/fonts/Nunito-BoldItalic.ttf');
+  font-style: italic;
+  font-weight: bold;
+}*/
+
+/* Estilos generales */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  background-color: #08031A;
+  background-size: 65px;
+  color: #fceaff;
+  background-image: var(--body-bg-image);
+  font-family: Fredoka;
+}
+
+.acerca{
+    margin: 0 50px 0 0;
+}
+
+.Cazu_teto{
+    margin: -90% 0 0 80%;
+    width: 20%;
+    display: inline-block;
+}
+
+.advertencia{
+    color: #d22626;
+    font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Layout principal */
+#container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#container a {
+  color: #f4b5c1;
+  font-weight: bold;
+}
+
+/* Header */
+#header {
+  width: 100%;
+  background-color: #253a6e;
+  height: 200px;
+  background-image: var(--header-image);
+  background-size: 100%;
+}
+
+/* Navbar */
+#navbar {
+  height: 40px;
+  background-color: #281646;
+  width: 100%;
+  margin: 0 auto 5px auto;
+}
+
+#navbar ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+#navbar li {
+  padding-top: 10px;
+}
+
+#navbar li a {
+  color: #f4b5c1;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#navbar li a:hover {
+  color: #a49cba;
+  text-decoration: underline;
+}
+
+/* Flex layout */
+#flex {
+  display: flex;
+}
+
+aside {
+  background-color: #354f90 ;
+  width: 200px;
+  padding: 20px;
+  font-size: smaller;
+}
+
+main {
+  background-color: #405eac;
+  flex: 1;
+  padding: 20px;
+  order: 2;
+}
+
+/* Sidebars */
+#leftSidebar {
+  order: 1;
+}
+
+#rightSidebar {
+  order: 3;
+}
+
+/* Footer */
+footer {
+  background-color: #281646;
+  width: 100%;
+  height: 40px;
+  padding: 1px;
+  text-align: center;
+}
+
+/* Tipografía */
+h1, h2, h3 {
+  color: #d6def3;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+strong {
+  color: #f4b5c1;
+}
+
+/* Caja especial */
+.box {
+  background-color: #281646;
+  border: 2px solid #f4b5c1;
+  padding: 10px;
+}
+
+/* Barra superior */
+#topBar {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  font-size: smaller;
+  background-color: #281646;
+}
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  #flex {
+    flex-wrap: wrap;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main {
+    order: 1;
+  }
+
+  #leftSidebar {
+    order: 2;
+  }
+
+  #rightSidebar {
+    order: 3;
+  }
+
+  #navbar ul {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi pagina web wow!!!">
+  <meta name="author" content="Cazuela Web">
+  <title>☆ Cazuela Blog ☆</title>
+  <link rel="shortcut icon" href="Imagenes/Favicon.ico">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+  <div id="container">
+    <div id="header"></div>
+
+    <div id="headerArea">
+      <nav id="navbar">
+        <ul>
+          <li><a href="main.html">Inicio</a></li>
+          <li><a href="traduccion.html">Mis traducciones</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="covers.html">Covers</a></li>
+          <li><a href="redes sociales.html">Redes sociales</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="flex">
+      <main id="blogMain">
+        <p>OLI bienvenidos a mi #blog, Aqui pondre mis mas profundos pesamientos (Porque me gusta contar todo) <br>
+          Y si son igual de chismosos que yo, los invito a leerlo!
+        </p>
+        <p>Por cierto, la entrada que este en azul es la mas nueva, okei?</p>
+
+        <div id="entrada1" class="entrada-activa" data-fecha="2025-07-08"> <!-- Es AAAA-MM-DD-->
+        <h2>Entrada 1</h2>
+        <p><strong>05-07-2025</strong></p>
+        <p>Omg que emocion que emocion! Finalmente esta pagina de mierdita esta tomando forma!</p>
+      </div>
+
+
+        <!--<div id="entrada2" class="entrada-oculta" data-fecha="2025-07-06">
+          <h2>Entrada 2</h2>
+          <p><strong>06-07-2025</strong></p>
+          <p>Aquí va la segunda entrada del blog, mucho texto wow wow.</p>
+        </div>-->
+
+
+      </main>
+
+      <aside id="leftSidebar">
+        <h2>Entradas del blog</h2>
+        <ul>
+          <li><a href="#" onclick="mostrarEntrada('entrada1')">Entrada 1</a></li>
+          <!--<li><a href="#" onclick="mostrarEntrada('entrada2')">Entrada 2</a></li>
+          <li><a href="#" onclick="mostrarEntrada('entrada3')">Entrada 3</a></li>-->
+        </ul>
+      </aside>
+    </div>
+
+    <footer id="footer">
+      <p>Cazuela ~ Cazuela Web 2025</p>
+    </footer>
+  </div>
+
+  <script>
+    function mostrarEntrada(id) {
+      const entradas = document.querySelectorAll('#blogMain > div');
+      entradas.forEach(div => {
+        div.classList.remove('entrada-activa');
+        div.classList.add('entrada-oculta');
+      });
+
+      const activa = document.getElementById(id);
+      if (activa) {
+        activa.classList.remove('entrada-oculta');
+        activa.classList.add('entrada-activa');
+      }
+    }
+
+  function destacarEntradaReciente() {
+  const entradas = document.querySelectorAll('#blogMain > div');
+  let masReciente = null;
+  let fechaMasReciente = null;
+
+  entradas.forEach(entrada => {
+    const fechaStr = entrada.dataset.fecha;
+    const fecha = new Date(fechaStr);
+
+    if (!fechaMasReciente || fecha > fechaMasReciente) {
+      masReciente = entrada;
+      fechaMasReciente = fecha;
+    }
+  });
+
+  if (masReciente) {
+    entradas.forEach(e => e.classList.remove('entrada-activa'));
+    masReciente.classList.remove('entrada-oculta');
+    masReciente.classList.add('entrada-activa', 'entrada-reciente');
+
+    // Añadir etiqueta visual al lado del título
+    const yaTieneEtiqueta = masReciente.querySelector('.etiqueta-nueva');
+    if (!yaTieneEtiqueta) {
+      const etiqueta = document.createElement('span');
+      etiqueta.textContent = '¡Nuevo!';
+      etiqueta.classList.add('etiqueta-nueva');
+
+      const titulo = masReciente.querySelector('h2');
+      if (titulo) {
+        titulo.appendChild(document.createTextNode(' ')); // espacio
+        titulo.appendChild(etiqueta);
+      }
+    }
+
+    // Resaltar el link del menú
+    const id = masReciente.id;
+    const link = document.querySelector(`a[href="#"][onclick*="${id}"]`);
+    if (link) link.classList.add('reciente-link');
+  }
+}
+
+
+    destacarEntradaReciente();
+  </script>
+</body>
+</html>
