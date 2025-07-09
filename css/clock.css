@@ -160,6 +160,24 @@ strong {
   padding: 10px;
 }
 
+.box_caz {
+  background-color: #2e1546; /* color morado */
+  padding: 15px;
+  border: 2px solid #f5a4d4; /* rosita */
+  border-radius: 15px;
+  margin: 20px auto;
+  width: fit-content;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+}
+
+.box_caz p {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 0;
+}
+
 /* Barra superior */
 #topBar {
   width: 100%;
