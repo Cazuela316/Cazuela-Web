@@ -28,13 +28,39 @@
       <main>
         <h1>Redes sociales!</h1>
         <p>Si es que necesitas contactar, por cualquier motivo, les dejo mis redes sociales en varias partes!</p>
-        <P>Solo tienen que hacerle click a alguno de los links y los redirigira a mi pagina :]</P>
-        <a class="Youtube" target="_blank" href="https://www.youtube.com/@cazuelaosi1163">Mi chachi canal!1!</a>
-        <a class="Twitter" target="_blank" href="https://x.com/Cazuelasuperlol">Mi wow wow Twitter</a>
-        <p>Mi super discord!1! cazusuperlol</p>
-        <a class="email" href="mailto:thestongestcazuela@gmail.com" title="OLA CLOCKEADOR DE TE">O enviame un email!</a>
+        <p>Solo clickea una de las cajitas y te enviara a donde quieras :]</p>
+        <p>Opcionalmente, si quieres estar AUN mas al tanto de la traduccion del tomodachi, unete al Tomodachi Collection ESP server!</p>
+  <div class="ds-cartuchos">
+    <a href="https://www.youtube.com/@cazuelaosi1163" target="_blank">
+      <p><span>📺</span>Mi YouTube!</p>
+    </a>
+    <a href="https://x.com/Cazuelasuperlol" target="_blank">
+      <p><span>🐦</span>Mi Twitter!</p>
+    </a>
+    <a href="#" onclick="copiarTexto('cazusuperlol')">
+      <p><span>🎮</span>Mi Discord!</p>
+    </a>
+    <a href="mailto:thestongestcazuela@gmail.com" title="OLA CLOCKEADOR DE TE">
+      <p><span>📧</span>Enviame un Email</p>
+    </a>
+    <a href="https://discord.com/invite/MNJ3Wv38T4" target="_blank">
+      <p><span>⭐</span>Tomodachi Collection ESP!</p>
+    </a>
+  </div>
       </main>
     </div>
+
+    <script>
+  function copiarTexto(texto) {
+    navigator.clipboard.writeText(texto)
+      .then(() => {
+        alert("¡Palabra copiada! 🌟");
+      })
+      .catch(err => {
+        console.error("Error al copiar :[ ", err);
+      });
+  }
+</script>
 
     <footer id="footer">
       <p>Cazuela ~ Cazuela Web 2025</p>
