@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi pagina web wow!!!">
+  <meta name="author" content="Cazuela Web">
+  <title>☆ Cazuela Web ☆</title>
+  <!--<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=40457594&main=1"></script>-->
+  <link rel="stylesheet" href="css/redessociales.css">
+   <link rel="shortcut icon" href="Imagenes/Favicon.ico">
+</head>
+<body>
+  <div id="container">
+    <div id="headerArea">
+      <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="traduccion.html">Mis traducciones</a></li> <!--Ok de esta manera puedes hacer que se redirijan a otra pagina okei-->
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="covers.html">Covers</a></li> <!-- Si pones "target= "_blank" el link se abrira en otra pagina equis-->
+            <li><a href="redes sociales.html">Redes sociales</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="flex">
+      <main>
+        <h1>Redes sociales!</h1>
+        <p>Si es que necesitas contactar, por cualquier motivo, les dejo mis redes sociales en varias partes!</p>
+        <p>Solo clickea una de las cajitas y te enviara a donde quieras :]</p>
+        <p>Opcionalmente, si quieres estar AUN mas al tanto de la traduccion del tomodachi, unete al Tomodachi Collection ESP server!</p>
+  <div class="ds-cartuchos">
+    <a href="https://www.youtube.com/@cazuelaosi1163" target="_blank">
+      <span>📺</span>Mi YouTube!
+    </a>
+    <a href="https://x.com/Cazuelasuperlol" target="_blank">
+      <span>🐦</span>Mi Twitter!
+    </a>
+    <a href="#" onclick="copiarTexto('cazusuperlol')">
+      <span>🎮</span>Mi Discord!
+    </a>
+    <a href="mailto:thestongestcazuela@gmail.com" title="OLA CLOCKEADOR DE TE">
+      <span>📧</span>Enviame un Email
+    </a>
+    <a href="https://discord.com/invite/MNJ3Wv38T4" target="_blank">
+      <span>⭐</span>Tomodachi Collection ESP!
+    </a>
+  </div>
+      </main>
+    </div>
+
+    <script>
+  function copiarTexto(texto) {
+    navigator.clipboard.writeText(texto)
+      .then(() => {
+        alert("¡Palabra copiada! 🌟");
+      })
+      .catch(err => {
+        console.error("Error al copiar :[ ", err);
+      });
+  }
+</script>
+
+    <footer id="footer">
+      <p>Cazuela ~ Cazuela Web 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
