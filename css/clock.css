@@ -131,6 +131,10 @@ main {
   order: 3;
 }
 
+audio#musica {
+  display: none;
+}
+
 /* Footer */
 footer {
   background-color: #281646;
