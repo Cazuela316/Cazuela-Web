@@ -5,6 +5,11 @@
   --content: #253a6e;
 }
 
+@font-face {
+  font-family: Fredoka;
+  src: url(../font/Fredoka.ttf);
+}
+
 /* Estilos generales */
 body {
   font-family: Fredoka, sans-serif;
