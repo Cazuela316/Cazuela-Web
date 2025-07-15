@@ -42,6 +42,10 @@ body {
   font-family: Fredoka;
 }
 
+.advertencia{
+    color: #d22626;
+    font-size: 17px;
+}
 
 * {
   box-sizing: border-box;
