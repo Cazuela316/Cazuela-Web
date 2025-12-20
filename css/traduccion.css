@@ -47,6 +47,10 @@ body {
     font-size: 17px;
 }
 
+.wow{
+  color: #69f835;
+}
+
 * {
   box-sizing: border-box;
 }
