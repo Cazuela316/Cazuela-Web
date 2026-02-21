@@ -159,7 +159,7 @@ strong {
 
 
 
-/* Etiqueta de “¡Nuevo!” */
+/* Etiqueta de “¡Nuevo!�? */
 .etiqueta-nueva {
   background-color: #a6c9f2; /* azul cielo */
   color: #004080;           /* azul profundo */
@@ -183,6 +183,10 @@ strong {
   font-weight: 700;
   text-decoration: none;
   transition: background-color 0.3s ease;
+}
+
+.hidden {
+  color: #405eac
 }
 
 .reciente-link:hover {
