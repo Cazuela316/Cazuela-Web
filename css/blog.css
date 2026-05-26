@@ -89,6 +89,7 @@ main {
   flex: 1;
   padding: 20px;
   order: 2;
+  width: 100%;
 }
 
 /* Sidebars */

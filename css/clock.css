@@ -117,6 +117,7 @@ aside {
 
 main {
   background-color: #405eac;
+    width: 100%;
   flex: 1;
   padding: 20px;
   order: 2;
@@ -169,7 +170,7 @@ strong {
   width: fit-content;
   max-width: 90%;
   text-align: center;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.3); /*Sobrita super*/
 }
 
 .box_caz p {
